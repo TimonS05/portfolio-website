@@ -294,7 +294,6 @@ nav a:hover {
     overflow: hidden;
     padding: 15px;^
     
-
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
 }
@@ -372,7 +371,13 @@ nav a:hover {
     transform: scale(1.03);
 }
 
+.project-portfolio-item h4 {
+    padding-bottom: 0px;
+}
 
+.project-portfolio-item p {
+    margin-top: -25px;
+}
 
 .portfolio-text {
     flex: 1;
