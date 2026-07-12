@@ -495,40 +495,47 @@ nav a:hover {
 
     /* Navigation */
     header {
-        padding: 18px 22px;
+        padding: 18px 20px;
     }
 
     nav {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
+        align-items: stretch;
+        gap: 14px;
     }
 
     nav h2 {
-        font-size: 18px;
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.1;
     }
 
     nav ul {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 6px;
-    padding: 0;
-}
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
 
     nav ul li {
-        flex: 1;
-        text-align: center;
+        list-style: none;
+        min-width: 0;
     }
 
     nav ul a {
         display: block;
-        white-space: nowrap;
-        font-size: 16px;
-        padding: 12px 6px;
-    }
+        width: 100%;
+        padding: 10px 2px;
 
+        font-size: 15px;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
     
 
 
@@ -683,5 +690,5 @@ nav a:hover {
     .contact-item span {
         overflow-wrap: anywhere;
     }
-}
+
 
